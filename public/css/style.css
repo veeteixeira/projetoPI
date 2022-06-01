@@ -39,6 +39,11 @@ body {
     color: #B57F50;
 }
 
+.logo{
+    width: 20%;
+    height: 100%;
+}
+
 .titulo {
     color: #32b9cd;
     width: fit-content;
@@ -171,6 +176,7 @@ body {
     font-size: 16px;
 }
 
+
 .banner_cad #div_erros_login {
     margin-top: 15px;
 }
@@ -178,6 +184,7 @@ body {
 button {
     cursor: pointer;
 }
+
 
 
 /* FORMULARIO */
@@ -236,6 +243,15 @@ input {
     margin-top: 5px;
 }
 
+.select {
+    font-family: 'Courier New', Courier, monospace ;
+    font-weight: bold;
+    height: 40px;
+    border: 3px solid #9AAC7A ;
+    border-radius: 10px;
+    color: #696969;
+}
+
 .loading-div {
     width: 50px;
     margin: auto;
@@ -271,8 +287,8 @@ input {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border-right: 3px solid #32b9cd;
-    background-color: #212124;
+    border-right: 3px solid #9AAC7A;
+    background-color: white;
     /* border: 3px solid pink; */
 }
 
@@ -280,7 +296,7 @@ input {
     display: flex;
     width: 75%;
     height: fit-content;
-    background-color: #161618;
+    background-color: #8FB3DA;
     position: relative;
     top: 0;
     left: 25%;
@@ -309,7 +325,7 @@ input {
 .btn-nav {
     width: 40%;
     color: white;
-    background-color: #e6005a;
+    background-color: #9AAC7A;
     border-radius: 5px;
     text-align: center;
     padding: 2% 5%;
@@ -317,15 +333,16 @@ input {
 
 .btn-nav-white {
     width: 40%;
-    background-color: white;
-    border: 3px solid #e6005a;
+    background-color: #9AAC7A;
+    border: 3px solid #9AAC7A;
     border-radius: 5px;
     text-align: center;
     padding: 2% 5%;
 }
 
 .btn-nav-white h3 {
-    color: #e6005a;
+    color: white;
+    background-color: #9AAC7A;
     padding: 0;
     margin: 0;
 }
@@ -340,7 +357,7 @@ input {
     margin: 0;
     padding: 0;
     width: 20%;
-    background-color: #32b9cd;
+    background-color: #9AAC7A ;
     color: white;
     border-radius: 10px;
     text-align: center;

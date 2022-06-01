@@ -38,6 +38,10 @@ body {
     list-style: none;
     color: #B57F50;
 }
+.logo{
+    width: 20%;
+    height: 100%;
+}
 
 .titulo {
     color: #32b9cd;
@@ -124,7 +128,7 @@ body {
 
 .footer {
     background-color: #8FB3DA;
-    height: 150px;
+    height: 10px;
     color: #fff;
     display: flex;
     font-size: 15px;

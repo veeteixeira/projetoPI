@@ -7,8 +7,8 @@ body {
 
 .dash-right .avisos {
   width: 100%;
-  /* border: 3px solid pink; */
-  color: rgb(216, 216, 216);
+  /*border: 3px solid pink;*/
+  color: #B57F50;
   font-family: "Exo 2", sans-serif;
 }
 
@@ -38,7 +38,7 @@ body {
 .dash-right .avisos .div-form textarea {
   width: 100%;
   /* color: #E6005A; */
-  border: 3px solid #e6005a;
+  border: 3px solid #9AAC7A;
   background-color: white;
   border-radius: 5px;
 }
@@ -52,7 +52,7 @@ body {
   font-size: 18px;
   padding: 10px 15px;
   color: white;
-  background-color: #e6005a;
+  background-color: #9AAC7A;
   width: 120px;
 }
 
@@ -65,7 +65,7 @@ body {
   font-size: 14px;
   padding: 5px 8px;
   color: white;
-  background-color: #e6005a;
+  background-color: #9AAC7A;
   width: 80px;
 }
 
@@ -76,7 +76,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  border-bottom: 3px solid #e6005a;
+  border-bottom: 3px solid #9AAC7A;
   padding: 20px;
 }
 
@@ -89,7 +89,7 @@ body {
 }
 
 .div-results .feed-container {
-  background-color: #212124;
+  background-color: white;
   border-radius: 5px;
   margin-bottom: 80px;
 }
@@ -106,7 +106,7 @@ body {
 /* pagina graficos */
 
 .dash-header {
-  background-color: #212124;
+  background-color: #8FB3DA;
 }
 
 .dash {
@@ -114,7 +114,7 @@ body {
   position: relative;
   top: 0;
   left: 25%;
-  background-color: #161618;
+  background-color: #8FB3DA;
 
   /* width: 75%;
     display: flex;
