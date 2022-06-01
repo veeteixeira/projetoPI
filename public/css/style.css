@@ -52,13 +52,23 @@ body {
     height: fit-content;
     padding: 40px 0;
     color: white;
+    background-image: url(".././assets/imgs/home.png");
+    width: 100%;
+    height: 20%;
+    background-size: cover;
+}
+
+.banner_cad {
+    height: fit-content;
+    padding: 40px 0;
+    color: white;
     background-image: url(".././assets/imgs/bible.png");
     width: 100%;
     height: 20%;
     background-size: cover;
 }
 
-.banner .container {
+.banner_cad .container {
     height: 400px;
     font-size: 36px;
     justify-content: center;
@@ -69,7 +79,7 @@ body {
     height: fit-content !important;
 }
 
-.banner p {
+.banner_cad p {
     width: 50%;
     margin: 0;
     padding: 0;
@@ -77,7 +87,7 @@ body {
     font-size: 36px;
 }
 
-.banner .container span {
+.banner_cad .container span {
     font-weight: 800;
 }
 
@@ -123,7 +133,7 @@ body {
 /* FOOTER */
 
 .footer {
-    background-color: #32b9cd;
+    background-color: #8FB3DA;
     height: 150px;
     color: #fff;
     display: flex;
@@ -137,15 +147,15 @@ body {
 
 /* LOGIN */
 
-.banner .container .card {
-    background-color: #e5e5e5;
+.banner_cad .container .card {
+    background-color: #8AA1B1;
     height: fit-content;
-    width: 400px;
+    width: 500px;
     display: flex;
     flex-direction: column;
-    color: palevioletred;
+    color: #B57F50;
     align-items: center;
-    border-radius: 4px;
+    border-radius: 20px;
 }
 
 .card {
@@ -161,7 +171,7 @@ body {
     font-size: 16px;
 }
 
-.banner #div_erros_login {
+.banner_cad #div_erros_login {
     margin-top: 15px;
 }
 
@@ -206,7 +216,7 @@ button {
 
 input {
     margin-bottom: 10px;
-    border: 2px solid #32b9cd;
+    border: 2px solid #9AAC7A;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
@@ -220,7 +230,7 @@ input {
     font-size: 18px;
     padding: 10px 15px;
     color: white;
-    background-color: #e6005a;
+    background-color: #9AAC7A;
     width: 120px;
     align-self: center;
     margin-top: 5px;

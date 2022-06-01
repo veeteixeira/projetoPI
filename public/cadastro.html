@@ -15,9 +15,7 @@
     <link rel="icon" href="./assets/icon/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,7 +23,7 @@
     <!--header inicio-->
     <div class="header">
         <div class="container">
-            <h1 class="titulo">AcquaTec</h1>
+            <img src="../public/assets/imgs/logo.png" style="height: 10%; width: 10%;">
             <ul class="navbar">
                 <li>
                     <a href="./index.html">
@@ -48,7 +46,7 @@
     <!--header fim-->
 
 
-    <div class="banner ">
+    <div class="banner_cad">
         <div class="alerta_erro">
             <div class="card_erro" id="cardErro">
                 <span id="mensagem_erro"></span>
@@ -75,6 +73,11 @@
 
                     <span class="tipo_campo">Confirmação da Senha:</span>
                     <input id="confirmacao_senha_input" type="password" placeholder="******">
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns">
+                        <label for="horns">Horns</label>
+                    </div>
 
                     <button class="btn" onclick="cadastrar()">Cadastrar</button>
 
@@ -120,8 +123,7 @@
 
             finalizarAguardar();
             return false;
-        }
-        else {
+        } else {
             setInterval(sumirMensagem, 5000)
         }
 
@@ -138,7 +140,7 @@
                 emailServer: emailVar,
                 senhaServer: senhaVar
             })
-        }).then(function (resposta) {
+        }).then(function(resposta) {
 
             console.log("resposta: ", resposta);
 
@@ -150,13 +152,13 @@
                 setTimeout(() => {
                     window.location = "login.html";
                 }, "2000")
-                
+
                 limparFormulario();
                 finalizarAguardar();
             } else {
                 throw ("Houve um erro ao tentar realizar o cadastro!");
             }
-        }).catch(function (resposta) {
+        }).catch(function(resposta) {
             console.log(`#ERRO: ${resposta}`);
             finalizarAguardar();
         });
@@ -167,5 +169,4 @@
     function sumirMensagem() {
         cardErro.style.display = "none"
     }
-
 </script>
