@@ -313,7 +313,7 @@ input {
 }
 
 .hello h3 {
-    color: #e3b062;
+    color: #B57F50;
     font-weight: 300;
     font-size: 1.2rem;
 }
@@ -370,7 +370,7 @@ input {
 /* pagina extra - simulador */
 
 .simulador {
-    color: white;
+    color: black;
 }
 
 .simulador .container {
