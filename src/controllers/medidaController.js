@@ -4,7 +4,7 @@ function buscarUltimasMedidas(req, res) {
 
     const limite_linhas = 7;
 
-    var fkOpcao = req.params.id;
+    var idAquario = req.params.id;
 
     console.log(`Recuperando as ultimas ${limite_linhas} medidas`);
 

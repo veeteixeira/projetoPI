@@ -39,7 +39,7 @@ function buscarMedidasEmTempoReal(fkOpcao) {
                     order by id desc`;
 
     } else if (process.env.AMBIENTE_PROCESSO == "desenvolvimento") {
-        instrucaoSql = `select fkOpcao, count(fkOpcao) as 'votacao' from usuario group by fkOpcao;`;
+        instrucaoSql = `select nome, count(fkOpcao) as 'votacao' from usuario group by fkOpcao;`;
     } else {
         console.log("\nO AMBIENTE (produção OU desenvolvimento) NÃO FOI DEFINIDO EM app.js\n");
         return
