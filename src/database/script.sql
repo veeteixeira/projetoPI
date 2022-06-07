@@ -2,6 +2,14 @@ CREATE DATABASE cotidie;
 
 USE cotidie;
 
+CREATE TABLE opcaoLectio (
+	idOpcao INT PRIMARY KEY,
+	nome VARCHAR(45)
+);
+
+INSERT INTO opcaoLectio VALUES (1, 'Liturgia Diária'),
+							   (2, 'Um livro da Bíblia');
+
 CREATE TABLE usuario (
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(50),
@@ -18,11 +26,3 @@ CREATE TABLE aviso (
 	fk_usuario INT,
 	FOREIGN KEY (fk_usuario) REFERENCES usuario(id)
 ); 
-
-CREATE TABLE opcaoLectio (
-	idOpcao INT PRIMARY KEY,
-	nome VARCHAR(45)
-);
-
-INSERT INTO opcaoLectio VALUES (1, 'Liturgia Diária'),
-							   (2, 'Um livro da Bíblia');
