@@ -4,7 +4,7 @@ USE cotidie;
 
 CREATE TABLE opcaoLectio (
 	idOpcao INT PRIMARY KEY,
-	nome VARCHAR(45)
+	nomeOpcao VARCHAR(45)
 );
 
 INSERT INTO opcaoLectio VALUES (1, 'Liturgia Diária'),
@@ -22,7 +22,7 @@ CREATE TABLE usuario (
 CREATE TABLE aviso (
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	titulo VARCHAR(100),
-    descricao VARCHAR(150),
+    partilha VARCHAR(5000),
 	fk_usuario INT,
 	FOREIGN KEY (fk_usuario) REFERENCES usuario(id)
 ); 
