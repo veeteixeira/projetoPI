@@ -1,0 +1,111 @@
+body {
+    background-color: #8FB3DA;
+}
+
+.container {
+    width: 55vw;
+    height: 100vh;
+    border-radius: 20px;
+    background-color: #30332E;
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3%;
+    margin-top: 1%;
+    padding-bottom: 2%;
+}
+
+.questionario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pergunta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 35%;
+    background-color: #FFFBFC;
+    border-radius: 20px;
+    margin-top: 4%;
+}
+
+.opt {
+    width: 80%;
+    height: 12%;
+    background-color: #FFFBFC;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.box-btn {
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enviar {
+    width: 20%;
+    margin-bottom: 2%;
+    color: white;
+    font-size: 32px;
+    border-radius: 10px;
+    font-family: monospace;
+    background-color: #EC058E;
+}
+
+.questao {
+    text-align: center;
+    font-size: 2em;
+    font-family: monospace;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 8%;
+}
+
+.alternativa {
+    font-size: 24px;
+    text-align: center;
+    margin: 3%;
+    font-family: monospace;
+}
+
+.pontuacaofinal {
+    width: 50vw;
+    height: 70vh;
+    border-radius: 20px;
+    background-color: white;
+    flex-direction: column;
+    display: flex;
+    margin-top: 10%;
+}
+
+.titulo {
+    width: 20vw;
+    height: 80vh;
+    background-color: red;
+}
+
+.btn_pontuacao {
+    border-radius: 8px;
+    background-color: #EC058E;
+    font-family: monospace;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    height: 45px;
+    border: none;
+    padding: 2%;
+    margin-top: 3%;
+}
+
+.texto_pontuacao {
+    font-family: monospace;
+    font-size: 24px;
+    text-align: center;
+}

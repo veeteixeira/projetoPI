@@ -22,7 +22,7 @@ CREATE TABLE usuario (
 CREATE TABLE aviso (
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	titulo VARCHAR(100),
-    partilha VARCHAR(5000),
+    descricao VARCHAR(5000),
 	fk_usuario INT,
 	FOREIGN KEY (fk_usuario) REFERENCES usuario(id)
 ); 

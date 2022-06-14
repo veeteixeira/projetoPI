@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CotidieQuiz</title>
+    <link rel="stylesheet" href="styleQuiz.css">
+</head>
+
+<body>
+    <section class="questionario">
+        <div class="container">
+            <div class="pergunta">
+                <p class="questao">2 - Qual é o discípulo que Jesus mais amava?</p>
+            </div>
+            <div id="div_alterA" class="opt">
+                <p class="alternativa" onclick="alterA()">A - João Evangelista</p>
+            </div>
+            <div id="div_alterB" class="opt">
+                <p class="alternativa" onclick="alterB()">B - Pedro</p>
+            </div>
+            <div id="div_alterC" class="opt">
+                <p class="alternativa" onclick="alterC()">C - Paulo</p>
+            </div>
+
+
+            <audio id="certo" src="../ProjetoQuiz/audios/certo.mp4" style="display: none"></audio>
+            <audio id="errado" src="../ProjetoQuiz/audios/errado.mp3" style="display: none"></audio>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<script>
+    function alterA() {
+        div_alterA.style.background = 'rgb(7, 90, 7)'
+
+        var AudioCerto = document.getElementById("certo")
+        AudioCerto.play();
+
+        setTimeout(function() {
+            window.location.href = "questao3.html";
+        }, 600);
+    }
+
+
+
+    function alterB() {
+        div_alterB.style.background = 'rgb(197, 1, 1)'
+
+        var AudioErro = document.getElementById("errado")
+        AudioErro.play();
+
+        setTimeout(function() {
+            window.location.href = "questao3.html";
+        }, 600);
+    }
+
+    function alterC() {
+        div_alterC.style.background = 'rgb(197, 1, 1)'
+
+        var AudioErro = document.getElementById("errado")
+        AudioErro.play();
+
+        setTimeout(function() {
+            window.location.href = "questao3.html";
+        }, 600);
+    }
+</script>
